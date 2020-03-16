@@ -14,6 +14,7 @@ public class WordCountApplication {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "word count");
+        job.setJarByClass(WordCountApplication.class);
         job.setMapperClass(WordCounterMapper.class);
         job.setCombinerClass(WordCounterReducer.class);
         job.setReducerClass(WordCounterReducer.class);

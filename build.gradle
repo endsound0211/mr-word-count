@@ -24,7 +24,6 @@ dependencies {
 
     implementation 'org.apache.hadoop:hadoop-common:3.0.0-cdh6.3.2'
     implementation 'org.apache.hadoop:hadoop-mapreduce-client-common:3.0.0-cdh6.3.2'
-    implementation 'org.apache.hadoop:hadoop-mapreduce-client-jobclient:3.0.0-cdh6.3.2'
 }
 
 jar {
